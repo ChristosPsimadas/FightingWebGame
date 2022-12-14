@@ -1,0 +1,59 @@
+.gameImages{
+    border-style: solid;
+    min-height: 700px;
+    width: 70%;
+    margin: auto;
+}
+
+.options{
+
+    width: 70%;
+    margin: auto;
+    min-height: 400px;
+    border-style: solid;
+
+    display: flex;
+}
+
+.askBox{
+
+    border-style: solid;
+    border-color: green;
+    width: 50%;
+    text-align: center;
+    font-family: 'VT323', monospace;
+
+    font-size: 500%;
+
+}
+
+.playerOptions{
+    border-style: solid;
+    border-color: aqua;
+    width: 50%;
+    display: grid;
+    gap: 7%;
+    grid-template-areas: 
+        "a b"
+        "c c";
+
+
+}
+
+.attack{
+    grid-area: a;
+    border-style: solid;
+    border-color: yellow;
+}
+.defend{
+    grid-area: b;
+    border-style: solid;
+    border-color: red;
+}
+
+.finisher{
+    grid-area: c;
+    border-style: solid;
+    border-color: purple;
+}
+
