@@ -3,9 +3,9 @@ class Character
     constructor()
     {
         this.strength = 6;
-        this.cunning = 6 + randomRange(0, 3);
-        this.speed = 6 + randomRange(0, 3);
-        this.fatigue = 30 + randomRange(0, 7);
+        this.cunning = 6;
+        this.speed = 6;
+        this.fatigue = 30;
         this.defending = false;
 
 
@@ -28,7 +28,6 @@ class Character
     
     }
 
-    
 
     attack(target) 
     {
@@ -50,9 +49,12 @@ class Character
         this.defend = false;
     }
 
-    finisher() 
+    finisher(target) 
     {
-
+        if ((this.fatigue > (2 * target.fatigue)) || (target.fatigue <= 0))
+        {
+            
+        }
     }   
 }
 
