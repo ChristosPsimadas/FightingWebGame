@@ -8,32 +8,32 @@ class Character
         this.fatigue = 30;
         this.defending = false;
 
-
-        let modifier = randomRange(1, 3);
-        switch (modifier)
+        if (randomRange(0, 2) == 1)
         {
-            case 1:
-                this.initialstrength += randomRange(0, 2);
-                this.initialspeed += randomRange(0, 2);
-                this.initialcunning -= randomRange(0, 2);
-                this.initialfatigue -= randomRange(0, 7);
-                break;
-            case 2:
-                this.initialstrength -= randomRange(0, 2);
-                this.initialspeed -= randomRange(0, 2);
-                this.initialcunning += randomRange(0, 2);
-                this.initialfatigue += randomRange(0, 7);
-                break;
+            
+            this.strength += randomRange(0, 2);
+                this.speed += randomRange(0, 2);
+                this.cunning -= randomRange(0, 2);
+                this.fatigue -= randomRange(0, 7);
         }
+        else
+        {
+            this.strength -= randomRange(0, 2);
+                this.speed -= randomRange(0, 2);
+                this.cunning += randomRange(0, 2);
+                this.fatigue += randomRange(0, 7);
+        }
+
     
     }
 
 
     attack(target) 
     {
-
-        damage = (target.defending) ? ((this.strength + this.speed + this.cunning) / randomRange(1, 4)) - (target.speed + target.cunning) : ((this.strength + this.speed + this.cunning) / randomRange(1, 4)) - (target.speed + randomRange(0, 7));
-
+        console.log(target);
+        console.log(target.defending);
+        let damage = (target.defending) ? Math.round(((this.strength + this.speed + this.cunning) - (target.speed + target.cunning)) / randomRange(1, 4)) : Math.round(((this.strength + this.speed + this.cunning) - (target.speed + randomRange(0, 7))) / randomRange(1, 4));
+        console.log(damage);
         damage = (damage < 0) ? 0 : damage;
 
         target.fatigue -= damage;
@@ -56,6 +56,11 @@ class Character
             
         }
     }   
+
+    getStrength()
+    {
+        return this.strength;
+    }
 }
 
 
@@ -72,6 +77,7 @@ class Enemy extends Character
     constructor()
     {
         super();
+        this.defending = false;
     }
 
     
@@ -79,10 +85,8 @@ class Enemy extends Character
 
 
 
-
-
 function randomRange(min, max) 
 {
-    return Math.random() * (max - min) + min;
+    return Math.floor(Math.random() * (max - min) + min);
 }
 

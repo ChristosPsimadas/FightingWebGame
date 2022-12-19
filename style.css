@@ -1,15 +1,64 @@
+body, html{
+    height: 100%;
+}
+
+.all{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
 .gameImages{
     border-style: solid;
-    min-height: 700px;
+    height: 50%;
+    position:relative;
     width: 70%;
     margin: auto;
 }
 
+#gengar{
+    
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+
+    
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+    margin-bottom: 505674456747563467547647564000px;
+
+    
+}
+
+#diglett{
+    margin-left: 80%;
+}
+
 .options{
 
+    position:relative;
     width: 70%;
     margin: auto;
-    min-height: 400px;
     border-style: solid;
 
     display: flex;
@@ -17,6 +66,7 @@
 
 .askBox{
 
+    position:relative;
     border-style: solid;
     border-color: green;
     width: 50%;
@@ -28,6 +78,7 @@
 }
 
 .playerOptions{
+    position:relative;
     border-style: solid;
     border-color: aqua;
     width: 50%;
@@ -41,19 +92,50 @@
 }
 
 .attack{
+    position:relative;
     grid-area: a;
     border-style: solid;
     border-color: yellow;
 }
 .defend{
+    position:relative;
     grid-area: b;
     border-style: solid;
     border-color: red;
 }
 
 .finisher{
+    position:relative;
     grid-area: c;
     border-style: solid;
     border-color: purple;
+}
+
+
+.info{
+    border-style: solid;
+    border-color: green;
+    width: 70%;
+    margin: auto;
+    min-height: 200px;
+    display: flex; 
+}
+
+.log{
+    border-style: solid;
+    border-color:darkred;
+    width: 50%;
+
+}
+
+.charinfo{
+    border-style: solid;
+    border-color:darkblue;
+    width: 50%;
+
+}
+
+.optionButton{
+    padding: 40px 160px;
 }
 

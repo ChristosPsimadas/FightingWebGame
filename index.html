@@ -8,39 +8,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap'); </style>
     <title>Document</title>
+
+
 </head>
-<body>
+<body onload="initialize();">
+
+
+    
+    <div class="all">
+        <div class="gameImages">
+            <div class="enemyStats">
+                <img src="images/diglett.png" alt="Diglett" class="character" id="diglett">
+            </div>
+    
+            <div class="playerStats">
+                <img src="images/GENGSRF.png" alt="Gengar" class="character" id="gengar">
+            </div>
+    
+    
+        </div>
+    
+        <div class="options">
+            <div class="askBox">
+                <p class="gameText" id="gameText"> What will you do? </p>
+            </div>
+    
+            <div class="playerOptions">
+                <div class="attack" onclick="playerattack();">
+                    <button class="optionButton">attack</button>
+                </div>
+                <div class="defend">
+                    <button class="optionButton">defend</button>
+
+                </div>
+                <div class="finisher">
+                    <button onclick="initialize();" class="optionButton">finish</button>
+                </div>
+            </div>
+        </div>  
+
+        <div class="info">
+            <div class="log">
+                <p class="playerStats" id="playerStats">player stats: </p>
+            </div>
+            <div class="charinfo">
+                <p class="enemyStats" id="enemyStats">Enemy Stats: </p>
+            </div>
+        </div>
+    </div>
+
     <script src="playerFighter.js"></script>
     <script src="game.js"></script>
-
-    <div class="gameImages">
-        <div class="enemyStats">
-
-        </div>
-
-        <div class="playerStats">
-
-        </div>
-
-
-    </div>
-
-    <div class="options">
-        <div class="askBox">
-            <p class="gameText"> What will you do? </p>
-        </div>
-
-        <div class="playerOptions">
-            <div class="attack">
-                
-            </div>
-            <div class="defend">
-
-            </div>
-            <div class="finisher">
-
-            </div>
-        </div>
-    </div>
 </body>
 </html>
