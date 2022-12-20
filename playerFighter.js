@@ -8,6 +8,9 @@ class Character
         this.fatigue = 30;
         this.defending = false;
 
+
+        this.dead = false;
+
         if (randomRange(0, 2) == 1)
         {
             
@@ -37,6 +40,8 @@ class Character
         damage = (damage < 0) ? 0 : damage;
 
         target.fatigue -= damage;
+
+        return damage;
     }
 
     defend() 
@@ -53,7 +58,7 @@ class Character
     {
         if ((this.fatigue > (2 * target.fatigue)) || (target.fatigue <= 0))
         {
-            
+            target.dead = true;
         }
     }   
 

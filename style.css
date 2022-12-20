@@ -136,6 +136,8 @@ body, html{
 }
 
 .optionButton{
-    padding: 40px 160px;
+    height: 100%;
+    width: 100%;
+    display: block;
 }
 
