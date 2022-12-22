@@ -161,13 +161,13 @@ function playerFinisher()
 function display()
 {
     playerStats.innerHTML = "Player Stats: \n" + 
-    "stength " + WebGame.player.strength + "\n" + 
+    "strength " + WebGame.player.strength + "\n" + 
     "cunning " + WebGame.player.cunning + "\n" + 
     "fatigue " + WebGame.player.fatigue + "\n" + 
     "speed " +  WebGame.player.speed + "\n"
     
     enemyStats.innerHTML = "enemy Stats: \n" + 
-    "stength " + WebGame.enemy.strength + "\n" + 
+    "strength " + WebGame.enemy.strength + "\n" + 
     "cunning " + WebGame.enemy.cunning + "\n" + 
     "fatigue " + WebGame.enemy.fatigue + "\n" + 
     "speed " +  WebGame.enemy.speed + "\n"

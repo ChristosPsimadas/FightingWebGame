@@ -47,7 +47,6 @@ body, html{
     margin-bottom: 505674456747563467547647564000px;
     margin-bottom: 505674456747563467547647564000px;
 
-    
 }
 
 #diglett{
@@ -94,27 +93,20 @@ body, html{
 .attack{
     position:relative;
     grid-area: a;
-    border-style: solid;
-    border-color: yellow;
 }
 .defend{
     position:relative;
     grid-area: b;
-    border-style: solid;
-    border-color: red;
 }
 
 .finisher{
     position:relative;
     grid-area: c;
-    border-style: solid;
-    border-color: purple;
 }
 
 
 .info{
     border-style: solid;
-    border-color: green;
     width: 70%;
     margin: auto;
     min-height: 200px;
@@ -139,5 +131,20 @@ body, html{
     height: 100%;
     width: 100%;
     display: block;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'VT323', monospace;
+}
+
+#attackButton{
+    background-color: rgb(211, 0, 0);
+}
+
+#defendButton{
+    background-color: rgb(62, 51, 167);
+}
+
+#finisherButton{
+    background-color: purple;
 }
 
